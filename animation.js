@@ -58,6 +58,8 @@ function draw(){
 
   // increment the multi so the next frame will progress slightly
   multi += speed;
+  while(multi > steps) multi -= steps
+  document.getElementById("multSlider").value = multi
 }
 
 function f(i){
